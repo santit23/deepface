@@ -378,21 +378,44 @@ chmod +x *.sh
 ./setup_demographics.sh
 ```
 
-## Quick Start
-Add Images to examples/ folder
+## Enhanced DeepFace Analysis 
 
-### Single image analysis:
-#### Basic analysis with default settings
-```python run_analysis.py --image examples/person.jpg```
+This fork includes a convenient Bash script to run **single or batch image analysis** with DeepFace using custom options.
 
-#### With custom output directory
-```python run_analysis.py --image examples/person.jpg --output my_results```
+---
+## Branch Note
 
-#### With specific detector
-```python run_analysis.py --image examples/person.jpg --detector mtcnn --output results_mtcnn```
+To use the enhanced Bash script and demographic analysis features, **switch to the `feature/demographic-action` branch**:
 
-### Batch image analysis:
-```python enhanced_deepface_analysis.py```
+### 1. Prerequisites
+
+- Python 3.8–3.11  
+- Virtual environment (recommended)  
+- Required Python packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Add Image
+Place your images in the examples/ folder.
+
+### 3. Make the Bash Script Executable
+```bash 
+chmod +x analyze.sh
+```
+
+### 4. Run Script 
+```bash
+./analyze.sh
+```
+You will be prompted to select an option
+1. Single image analysis
+2. Single image analysis with custom output directory
+3. Single image analysis with specific detector
+4. Batch image analysis
+
+
 
 ## Support
 
