@@ -2,6 +2,7 @@
 import os
 import warnings
 import logging
+from tqdm import tqdm
 from typing import Any, Dict, IO, List, Union, Optional, Sequence
 
 # this has to be set before importing tensorflow
@@ -26,7 +27,9 @@ from deepface.modules import (
     detection,
     streaming,
     preprocessing,
+     
 )
+
 from deepface import __version__
 
 logger = Logger()
@@ -260,6 +263,8 @@ def analyze(
             - 'middle eastern': Confidence score for Middle Eastern ethnicity.
             - 'white': Confidence score for White ethnicity.
     """
+
+    
     return demography.analyze(
         img_path=img_path,
         actions=actions,
@@ -270,6 +275,10 @@ def analyze(
         silent=silent,
         anti_spoofing=anti_spoofing,
     )
+
+# In deepface/DeepFace.py
+
+
 
 
 def find(

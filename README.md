@@ -365,6 +365,35 @@ Pull requests are more than welcome! If you are planning to contribute a large p
 
 Before creating a PR, you should run the unit tests and linting locally by running `make test && make lint` command. Once a PR sent, GitHub test workflow will be run automatically and unit test and linting jobs will be available in [GitHub actions](https://github.com/serengil/deepface/actions) before approval.
 
+## Enhanced Deepface Demographics
+Enhanced age, gender, and emotion detection with visualization and batch processing.
+
+## Quick Install
+
+```bash
+git clone https://github.com/your-username/deepface.git
+cd deepface
+git checkout demographics-action
+chmod +x *.sh
+./setup_demographics.sh
+```
+
+## Quick Start
+Add Images to examples/ folder
+
+### Single image analysis:
+#### Basic analysis with default settings
+```python run_analysis.py --image examples/person.jpg```
+
+#### With custom output directory
+```python run_analysis.py --image examples/person.jpg --output my_results```
+
+#### With specific detector
+```python run_analysis.py --image examples/person.jpg --detector mtcnn --output results_mtcnn```
+
+### Batch image analysis:
+```python enhanced_deepface_analysis.py```
+
 ## Support
 
 There are many ways to support a project - starring⭐️ the GitHub repo is just one 🙏 It really helps the project get discovered by more people.

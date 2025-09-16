@@ -1,0 +1,31 @@
+{
+  "image_path": "./test_image.jpg",
+  "analysis_date": "20250916_145929",
+  "detector_backend": "opencv",
+  "faces_detected": 1,
+  "results": [
+    {
+      "face_id": 0,
+      "bbox": [
+        4,
+        1,
+        47,
+        47
+      ],
+      "confidence": 0.9547144491795916,
+      "age": 26,
+      "gender": "Man",
+      "emotion": "happy",
+      "emotion_scores": {
+        "angry": 5.77024378695759e-24,
+        "disgust": 0.0,
+        "fear": 3.1739507291288397e-26,
+        "happy": 100.0,
+        "sad": 8.88691568321093e-24,
+        "surprise": 6.317567454415529e-13,
+        "neutral": 2.330830284336116e-08
+      },
+      "gender_score": 54.0893440246582
+    }
+  ]
+}
